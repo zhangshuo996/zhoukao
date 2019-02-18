@@ -77,7 +77,7 @@ gulp.task("zipJS", function () {
 })
 //压缩html
 gulp.task("zipHTML", function () {
-    return gulp.src("./src/**/*.html")
+    return gulp.src(["./src/**/*.html","./package.json"])
         .pipe(minHTML({ collapseWhitespace: true }))
         .pipe(gulp.dest("./dist"))
 })
