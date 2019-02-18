@@ -1,0 +1,69 @@
+@import "../libs/common";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header{
+        height: pxTorem(40px);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #e7d3b1;
+        ul{
+            display: flex;
+            align-items: center;
+            li:nth-child(3){
+                padding: pxTorem(1px) pxTorem(5px);
+            }
+            li:nth-child(1){
+                padding: pxTorem(1px) pxTorem(5px);
+                // border-right: 1px solid #ccc;
+            }
+            .active{
+                font-size: pxTorem(20px);
+                color:#fff;
+            }
+        }
+    }
+    section{
+        flex: 1;
+        background: #e7d3b1;
+        .audio{
+            margin-top: pxTorem(100px);
+        }
+        .fix{
+            position:fixed;
+            bottom: pxTorem(50px);
+            h5{
+                font-size: pxTorem(20px);
+                color:#fff;
+                margin-bottom: pxTorem(20px);
+            }
+            p{
+                font-size: pxTorem(16px);
+                color:#ccc;
+            }
+        }
+    }
+    footer{
+        height: pxTorem(44px);
+        background: #e7d3b1;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
